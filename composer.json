@@ -1,0 +1,45 @@
+{
+    "name": "nearata/flarum-ext-twofactor",
+    "description": "Allows your users to activate 2FA authentication.",
+    "keywords": [
+        "flarum",
+        "twofactor",
+        "security"
+    ],
+    "type": "flarum-extension",
+    "license": "Unlicense",
+    "require": {
+        "php": "^8.0",
+        "flarum/core": "^1.7.0",
+        "spomky-labs/otphp": "^10.0.3|^11.0.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.5.0"
+    },
+    "authors": [
+        {
+            "name": "Nearata",
+            "email": "nearata@protonmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nearata\\TwoFactor\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Two Factor",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-shield-alt",
+                "backgroundColor": "#D72638",
+                "color": "#fff"
+            }
+        }
+    },
+    "scripts": {
+        "format": "pint src"
+    }
+}
